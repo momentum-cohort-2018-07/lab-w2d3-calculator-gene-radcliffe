@@ -1,3 +1,5 @@
+var equal_pushed = false;
+var dot_pushed =false;
 //accumulator function
 displayAccumulator();
 function displayAccumulator(){
@@ -15,7 +17,42 @@ function displayAccumulator(){
                 case "C":
                     screen.innerText=" ";
                     break;
+                case "+":
+                if(equal_pushed===true){
+                    equal_pushed=false;
+                }
+                    screen.innerText+=input;
+                    break;
+                case "-":
+                    if(equal_pushed===true){
+                        equal_pushed=false;
+                    }
+                        screen.innerText+=input;
+                    break;
+                case "/":
+                    if(equal_pushed===true){
+                        equal_pushed=false;
+                    }
+                        screen.innerText+=input;
+                    break;
+                case "*":
+                    if(equal_pushed===true){
+                        equal_pushed=false;
+                    }
+                        screen.innerText+=input;
+                    break;
+                case ".":
+                    if(equal_pushed===true){
+                        equal_pushed=false;
+                    }
+                    if(dot_pushed===false){
+                        screen.innerText+=input;
+                        dot_pushed===true;
+                    }
+                        
+                    break;
                 case "=":
+                    equal_pushed=true;
                     output = screen.innerText;
                     screen.innerText=""
                     console.log("acc: " + output);
@@ -24,6 +61,10 @@ function displayAccumulator(){
                     screen.innerText = output;
                     break;
                 default:    
+                    if(equal_pushed===true){
+                        screen.innerText=" "
+                        equal_pushed=false;
+                    }
                     screen.innerText+=input;
             }
           })
