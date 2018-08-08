@@ -5,30 +5,32 @@
 }
 
 body{
-  
+    
     margin: 0 auto;
     border: 1px solid green;
 }
 .container{
     overflow: auto;
-   
-    border: 0 auto;
+    border: 1px solid red;
+    margin: 0 auto;
 }
 
-.display-section--button{
+.display-section{
     float: left;
     border: 1px solid gray;
     height: 150px;
-    font-size: 2em;
+    font-size: 5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
 }
 
 .numeral-section--button{
     float: left; 
     border: 1px solid gray;
     height: 150px;
-    font-size:2em;
+    font-size:5em;
     text-align: center;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .row{
     display: block;

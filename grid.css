@@ -37,6 +37,18 @@
 .col-1{
     width: 8.33%
 }
+.screen{
+    background-color: #717C89;
+    border: 1px solid #e2e4e7; /** lighter version of background color**/
+}
 
-
-
+.numeral-section--button{
+    background-color: #8aa2a9;
+}
+.sign, .clear{
+    background-color: #90BAAD;
+}
+.screen{
+    text-align: right;
+    color:white;
+}
