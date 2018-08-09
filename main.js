@@ -85,6 +85,10 @@ function displayAccumulator(){
                 
                     if(dot_pushed===false){
                         console.log("dot is pushed")
+                        if(initial){
+                            screen.innerText = "0"
+                            initial =false
+                        }
                         screen.innerText+=input;
                         dot_pushed=true;
                         
